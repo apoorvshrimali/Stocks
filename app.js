@@ -1,4 +1,4 @@
-var intialPrice =document.queryCommandValue('#iniatl-price');
+var initialPrice =document.querySelector('#initial-price');
 
 var stocksQuantity =document.querySelector('#stocks-quantity');
 
@@ -10,7 +10,7 @@ var outputBox=document.querySelector('#output-box');
 
 submitBtn.addEventListener('click',submitHandler);
 function submitHandler(){
-    var ip =Number(intialPrice.value);
+    var ip =Number(initialPrice.value);
     var qty =Number(stocksQuantity.value);
     var curr = Number(currentPrice.value);
 
@@ -21,12 +21,12 @@ function calulateProfitAndLoss(intial, quantity, current){
 if(intial > current){
     var loss = (intial-current) * quantity
     var lossPercentage =(loss/intial) * quantity
-    showOutput('Hey The Loss is ${loss} And The Loss Percentage is ${losspercentage}%');
+    showOutput(`Hey The Loss is ${loss} And The Loss Percentage is ${lossPercentage}%`);
 } 
 else if (current > intial){
     var profit = (current-intial) * quantity
-    var lossPercentage =(profit/intial) * quantity
-    console.log('Hey The Profit is ${Profit} And The Profit Percentage is ${losspercentage}%');
+    var profitPercentage =(profit/intial) * quantity
+    showOutput(`Hey The Profit is ${profit} And The Profit Percentage is ${profitPercentage}%`);
     
 
 }else {

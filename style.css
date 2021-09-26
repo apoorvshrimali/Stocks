@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background-color: #A7F3D0;
+    font-family: 'Lato', sans-serif;
+}
+
+.input {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: black;
+
+}
+
+.placeholder {
+    border-radius: 0.5rem;
+    font-display:
+        #059669;
+}
+
+
+
+.main {
+    text-align: center;
+    color: #047857;
+
+
+}
+
+.submit-button {
+    text-align: center;
+    width: auto;
+    border-radius: 0.5rem;
+
+
+
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #047857;
+    transition: 0.3s ease-in-out
+}
+
+.button:hover {
+    background-color: #059669;
+    color: white;
+}
+
+#initial-price {
+    margin-left: 5rem;
+}
+
+#stocks-quantity {
+    margin-left: 1.6rem;
+}
+
+#current-price {
+    margin-left: 4rem;
+}

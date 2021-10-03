@@ -17,23 +17,24 @@ function submitHandler(){
     calulateProfitAndLoss(ip, qty, curr);
 }
 
+
 function calulateProfitAndLoss(intial, quantity, current){
 if(intial > current){
-    var loss = (intial-current) * quantity
-    var lossPercentage =(loss/intial) * quantity
-    showOutput(`Hey The Loss is ${loss} And The Loss Percentage is ${lossPercentage}%`);
+    diff = intial - current;
+    percent = (diff / intial) * 100;
+    showOutput(`Hey The Loss is ${diff * quantity} And The Loss Percentage is ${percent}%`);
 } 
 else if (current > intial){
-    var profit = (current-intial) * quantity
-    var profitPercentage =(profit/intial) * quantity
-    showOutput(`Hey The Profit is ${profit} And The Profit Percentage is ${profitPercentage}%`);
+    diff = current - intial ;
+    percent = (diff / intial) * 100;
+    showOutput(`Hey The Profit is ${diff * quantity} And The Profit Percentage is ${percent}%`);
     
-
 }else {
 showOutput("BETTER LUCK NEXT TIME");
 }
-
 }
+
+
 function showOutput(message){
   outputBox.innerHTML = message;
 }

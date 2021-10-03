@@ -1,4 +1,5 @@
 # Profit & Loss Calculator
+[Live Live](https://stock-calculator-apoorvshrimali.netlify.app/)
 ## This appliction is made for calculation for profit and loss based on intial price and current price. This application is also calculates the profit and loss percentage.
 ### Tech Stack
 * HTML5
